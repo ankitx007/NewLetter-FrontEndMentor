@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  transition: all ease 0.3s;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 50vw;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.sign-up-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sign-up-form img {
+  width: 85%;
+  justify-self: end;
+}
+
+.left-data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 15px;
+}
+
+.left-data h1,
+.success-message h1 {
+  font-size: 44px;
+  color: hsl(234, 29%, 20%);
+}
+
+.left-data p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+ul li {
+  font-size: 12px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+ul li::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("assets/images/icon-success.svg");
+  margin-right: 10px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid hsl(231, 7%, 60%);
+  border-radius: 5px;
+}
+
+input:invalid {
+  background-color: hsla(4, 100%, 67%, 0.3);
+  color: hsl(4, 100%, 67%);
+  border: 2px solid hsl(4, 93%, 53%);
+}
+
+#inValidEmail {
+  display: none;
+}
+
+input::placeholder {
+  color: hsl(231, 7%, 60%);
+}
+
+button {
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  transition: 0.2s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.success-message {
+  display: none;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  gap: 15px;
+  padding: 2rem;
+}
+
+.color {
+  color: hsl(234, 29%, 20%);
+  color: hsl(235, 18%, 26%);
+  color: hsl(231, 7%, 60%);
+  color: hsl(0, 0%, 100%);
+}
